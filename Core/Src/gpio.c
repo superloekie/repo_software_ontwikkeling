@@ -50,6 +50,9 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOE_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
+  //Hier staan 2 pinnen voor blauw, 3 pinnen voor groen en 3 pinnen voor rood. Ik vraag me af of dit wel klopt. 
+  // Moet even gecontroleerd worden in de IOC map en online even kijken welke pin wat doet van de 12 pin VGA connector.
+  
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOE, VGA_BLUE0_Pin|VGA_BLUE1_Pin|VGA_GREEN0_Pin|VGA_GREEN1_Pin
                           |VGA_GREEN2_Pin|VGA_RED0_Pin|VGA_RED1_Pin|VGA_RED2_Pin, GPIO_PIN_RESET);
