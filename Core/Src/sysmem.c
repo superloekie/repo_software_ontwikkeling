@@ -25,6 +25,11 @@
 #include <errno.h>
 #include <stdio.h>
 
+// Libraries zijn toegevoegd om de _sbrk functie te kunnen gebruiken. Deze functie is nodig voor het dynamisch toewijzen van geheugen (bijvoorbeeld voor malloc).
+// Vergrekegegen met AI.
+#include <stdint.h>
+#include <sys/types.h>
+
 /* Variables */
 extern int errno;
 register char * stack_ptr asm("sp");

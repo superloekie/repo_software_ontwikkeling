@@ -49,7 +49,7 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOE_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
-
+  
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOE, VGA_BLUE0_Pin|VGA_BLUE1_Pin|VGA_GREEN0_Pin|VGA_GREEN1_Pin
                           |VGA_GREEN2_Pin|VGA_RED0_Pin|VGA_RED1_Pin|VGA_RED2_Pin, GPIO_PIN_RESET);
